@@ -6,6 +6,7 @@ import { Container, Card, Accordion, Button } from "react-bootstrap";
 const Cours = ({ cours }) => {
   return (
     <div>
+
       <Accordion defaultActiveKey='0'>
         <Card className='my-3 p-1 rounded'>
           <Accordion.Toggle as={Button} variant='link' eventKey='1'>

@@ -1,6 +1,5 @@
 const courses = [
   {
-    _id: '1',
     title: 'HTML&CSS from scratch',
     image: '/images/cours1.jpg',
     description:
@@ -12,7 +11,7 @@ const courses = [
     numReviews: 712,
   },
   {
-    _id: '2',
+
     title: 'C++ from scratch',
     image: '/images/cours2.jpg',
     description:
@@ -24,7 +23,6 @@ const courses = [
     numReviews: 912,
   },
   {
-    _id: '3',
     title: 'C++ data structure',
     image: '/images/cours3.jpg',
     description:
@@ -36,7 +34,6 @@ const courses = [
     numReviews: 212,
   },
   {
-    _id: '4',
     title: 'linux redhat server',
     image: '/images/cours4.jpg',
     description:
@@ -48,7 +45,6 @@ const courses = [
     numReviews: 120,
   },
   {
-    _id: '5',
     title: 'kali linux from scratch',
     image: '/images/cours5.jpg',
     description:
@@ -60,7 +56,6 @@ const courses = [
     numReviews: 12,
   },
   {
-    _id: '6',
     title: 'Cisco CCNA',
     image: '/images/cours6.jpg',
     description:

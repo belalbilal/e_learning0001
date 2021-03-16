@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Row, Col, Card, Button, Container } from "react-bootstrap";
 import Cours from "../components/Cours";
 import Contact from "./ContactScreen";
+import Message from '../components/Message';
+import Loader from '../components/Loader';
 import axios from "axios";
 import { listCourses } from "../actions/coursActions";
 
@@ -42,9 +44,9 @@ const HomeScreen = () => {
       </Card>
       <h1>Latest Courses</h1>
       {loading ? (
-        <h2>Loading....</h2>
+        <Loader/>
       ) : error ? (
-        <h3>{error}</h3>
+        <Message variant='danger'>{error}</Message>
       ) : (
         <Row>
           {courses.map((cours, index) => {

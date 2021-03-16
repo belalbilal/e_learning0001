@@ -9,6 +9,10 @@ import CoursesScreen from './screens/CoursesScreen';
 import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContactScreen';
 import LoginScreen from './screens/LoginScreen';
+import RegisterScreen from './screens/RegisterScreen';
+import ProfilScreen from './screens/ProfileScreen';
+import UserListScreen from './screens/UserListScreen'
+import UserEditScreen from './screens/UserEditScreen'
 
 
 
@@ -20,12 +24,16 @@ const App = () => {
     <Header/>
       <main className="py-3">
         <Container>
-          <Route path='/' component={HomeScreen} exact/>
           <Route path='/Cours/:id' component={CoursScreen}/>
-          <Route path='/Courses' component={CoursesScreen} exact/>
-          <Route path='/About' component={AboutScreen} exact/>
-          <Route path='/Contact' component={ContactScreen} exact/>
-          <Route path='/Login' component={LoginScreen} exact/>
+          <Route path='/Courses' component={CoursesScreen}/>
+          <Route path='/About' component={AboutScreen} />
+          <Route path='/Contact' component={ContactScreen} />
+          <Route path='/Login' component={LoginScreen} />
+          <Route path='/Profile' component={ProfilScreen} />
+          <Route path='/admin/Register' component={RegisterScreen} />
+          <Route path='/admin/userlist' component={UserListScreen} />
+          <Route path='/admin/user/:id/edit' component={UserEditScreen} />
+          <Route path='/' component={HomeScreen} exact/>
          
         </Container>
       </main>
